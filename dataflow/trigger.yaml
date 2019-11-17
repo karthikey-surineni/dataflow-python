@@ -6,7 +6,7 @@ steps:
   - |
     echo "`ls ./dataflow/`"
     curl -O https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz
-    tar -xvzf Python-3.8.0.tar.xz
+    tar xf Python-3.8.0.tar.xz
     bash ./Python-3.8.0/install-sh
     python3 -m pip install -r requirements.txt
     python3 ./dataflow/RecordToBigQuery.py \
