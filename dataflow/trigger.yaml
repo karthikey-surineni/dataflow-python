@@ -5,8 +5,12 @@ steps:
   - '-c'
   - |
     echo "`ls ./dataflow/`"
-    pip install -r requirements.txt
-    python ./dataflow/RecordToBigQuery.py \
+    wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz
+    tar -xvzf Python-3.8.0.tar.xz
+    export HOME=$HOME:Python-3.8.0
+    bash Python-3.8.0/install-sh
+    python3 -m pip install -r requirements.txt
+    python3 ./dataflow/RecordToBigQuery.py \
     --input gs://cb-dataflow-storage/test-file.csv \
     --output-main cb-dataflow-python:ADataset_Staging.ATest \
     --output-reject cb-dataflow-python:Common.Reject \
