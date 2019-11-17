@@ -7,7 +7,6 @@ steps:
     echo "`ls ./dataflow/`"
     wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz
     tar -xvzf Python-3.8.0.tar.xz
-    # echo "`export HOME=${HOME}:Python-3.8.0`"
     bash Python-3.8.0/install-sh
     python3 -m pip install -r requirements.txt
     python3 ./dataflow/RecordToBigQuery.py \
