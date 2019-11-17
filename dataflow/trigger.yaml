@@ -5,6 +5,7 @@ steps:
   - '-c'
   - |
     echo "`ls ./dataflow/`"
+    pip install -r requirements.txt
     python ./dataflow/RecordToBigQuery.py \
     --input gs://cb-dataflow-storage/test-file.csv \
     --output-main cb-dataflow-python:ADataset_Staging.ATest \
