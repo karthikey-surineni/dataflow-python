@@ -4,6 +4,7 @@ steps:
   args:
   - '-c'
   - |
+    echo "`ls`"
     python /dataflow/RecordToBigQuery.py \
     --input gs://cb-dataflow-storage/test-file.csv \
     --output-main cb-dataflow-python:ADataset_Staging.ATest \
