@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "ID",
+        "type" : "INTEGER",
+        "mode" : "NULLABLE"
+    },
+    {
+        "name" : "Data",
+        "type" : "FLOAT",
+        "mode" : "NULLABLE"
+    },
+    {
+        "name" : "Timestamp",
+        "type" : "TIMESTAMP",
+        "mode" : "NULLABLE"
+    }
+]

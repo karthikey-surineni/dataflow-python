@@ -1,0 +1,27 @@
+[
+    {
+        "name" : "ID",
+        "type" : "STRING",
+        "mode" : "NULLABLE"
+    },
+    {
+        "name" : "Source",
+        "type" : "STRING",
+        "mode" : "NULLABLE"
+    },
+    {
+        "name" : "Data",
+        "type" : "STRING",
+        "mode" : "NULLABLE"
+    },
+    {
+        "name" : "Reason",
+        "type" : "STRING",
+        "mode" : "NULLABLE"
+    },
+    {
+        "name" : "Timestamp",
+        "type" : "TIMESTAMP",
+        "mode" : "NULLABLE"
+    }
+]

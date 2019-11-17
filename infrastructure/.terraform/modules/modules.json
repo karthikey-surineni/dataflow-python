@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"ADataset-staging","Source":"./BigQuery","Dir":"BigQuery"},{"Key":"BDataset-staging","Source":"./BigQuery","Dir":"BigQuery"},{"Key":"ADataset-store","Source":"./BigQuery","Dir":"BigQuery"},{"Key":"","Source":"","Dir":"."},{"Key":"cb-dataflow-staging","Source":"./BigQuery","Dir":"BigQuery"},{"Key":"Reject","Source":"./BigQuery","Dir":"BigQuery"}]}

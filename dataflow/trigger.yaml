@@ -1,0 +1,18 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    python ./dataflow/RecordToBigQuery.py \
+    --input gs://cb-dataflow-storage/test-file.csv \
+    --output-main cb-dataflow-python:ADataset_Staging.ATest \
+    --output-reject cb-dataflow-python:Common.Reject \
+    --runner DataflowRunner \
+    --project cb-dataflow-python \
+    --temp_location gs://cb-dataflow-storage/temp/ \
+    --staging_location gs://cb-dataflow-storage/staging/ \
+    --extra-package /Users/karthikeysurineni/dataflow-python/dataflow/BQUtil.py
+  env:
+  - 'PROJECT=$PROJECT_ID'
+substitutions:
